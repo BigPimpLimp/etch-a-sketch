@@ -1,4 +1,18 @@
-document.body.onload = addDiv;
+document.body.onload = initalGrid;
+
+function initalGrid() {
+    let i = 0;
+    const percentage = 100 / 16;
+    while (i < 256) {
+        const newDiv = document.createElement('div');
+        newDiv.setAttribute('id', 'colorMe');
+        newDiv.style.setProperty('width', `calc(${percentage}% - 2px)`);
+        newDiv.style.setProperty('height', `calc(${percentage}$ - 2px)`);
+        const mainDiv = document.getElementById('container')
+        mainDiv.appendChild(newDiv);
+        i++;
+    }
+}
 
 function addDiv(userInput) {
     let i = 0;
