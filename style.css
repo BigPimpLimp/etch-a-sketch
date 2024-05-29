@@ -1,0 +1,25 @@
+html {
+  
+
+}
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container>* {
+    background-color: orange;
+    border: 1px solid;
+}
+
+#container {
+    height: 700px;
+    width: 700px;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 auto;
+}
+
